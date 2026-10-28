@@ -1,0 +1,24 @@
+[Capture] Events written to system_events.log
+
+[Parse] 26 events loaded. Last 12 events:
+  2026-10-29 00:10:19  AUTH     LOGIN_FAILED     admin  203.0.113.45    invalid password
+  2026-10-29 00:10:39  AUTH     LOGIN_FAILED     admin  203.0.113.45    invalid password
+  2026-10-29 00:10:59  AUTH     LOGIN_FAILED     admin  203.0.113.45    invalid password
+  2026-10-29 00:11:19  AUTH     LOGIN_FAILED     admin  203.0.113.45    invalid password
+  2026-10-29 00:11:39  AUTH     LOGIN_FAILED     admin  203.0.113.45    invalid password
+  2026-10-29 00:12:59  AUTH     LOGIN_SUCCESS    admin  203.0.113.45    ssh login
+  2026-10-29 00:13:59  SYSTEM   PRIV_ESCALATION  admin  203.0.113.45    sudo su root
+  2026-10-29 00:14:59  FILE     FILE_ACCESS      admin  203.0.113.45    watched_folder/notes.txt
+  2026-10-29 00:14:59  FILE     FILE_ACCESS      admin  203.0.113.45    watched_folder/salary_data.xlsx
+  2026-10-29 00:15:59  NETWORK  DATA_TRANSFER    admin  203.0.113.45    outbound 250 MB to 203.0.113.45:443
+  2026-10-29 00:17:59  AUTH     LOGIN_FAILED     bob    192.168.1.11    typo
+  2026-10-29 00:22:59  AUTH     LOGIN_FAILED     bob    192.168.1.11    typo
+
+[Correlate] Security alerts:
+  [HIGH    ] Brute-force attack from 203.0.113.45: 6 failed logins within 0:05:00
+  [CRITICAL] Account 'admin' compromised from 203.0.113.45 at 2026-10-29 00:12:59
+  [CRITICAL] Privilege escalation by 203.0.113.45 after compromise
+  [CRITICAL] Data exfiltration by 203.0.113.45: accessed [watched_folder/notes.txt, watched_folder/salary_data.xlsx] then large outbound transfer
+  [MEDIUM  ] Successful login from external IP 203.0.113.45
+
+Incident report saved to incident_report.txt

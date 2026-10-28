@@ -1,0 +1,69 @@
+### C++ (n_queens.cpp)  input: 8 0 
+Enter n (board size): Enter column (0 to 7) of first queen in row 0: 
+Initial board (first queen placed):
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+ .  .  .  .  .  .  .  . 
+
+Final 8-Queens matrix:
+ Q  .  .  .  .  .  .  . 
+ .  .  .  .  Q  .  .  . 
+ .  .  .  .  .  .  .  Q 
+ .  .  .  .  .  Q  .  . 
+ .  .  Q  .  .  .  .  . 
+ .  .  .  .  .  .  Q  . 
+ .  Q  .  .  .  .  .  . 
+ .  .  .  Q  .  .  .  . 
+
+Matrix form:
+1 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 1 
+0 0 0 0 0 1 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 1 0 
+0 1 0 0 0 0 0 0 
+0 0 0 1 0 0 0 0 
+
+Time Complexity : O(n!)
+Space Complexity: O(n^2) board + O(n) recursion stack
+
+### Python (n_queens.py)
+Enter n (board size): Enter column (0 to 7) of first queen in row 0: 
+Initial board (first queen placed):
+Q . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+. . . . . . . .
+
+Final 8-Queens matrix:
+Q . . . . . . .
+. . . . Q . . .
+. . . . . . . Q
+. . . . . Q . .
+. . Q . . . . .
+. . . . . . Q .
+. Q . . . . . .
+. . . Q . . . .
+
+Matrix form:
+1 0 0 0 0 0 0 0
+0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 1
+0 0 0 0 0 1 0 0
+0 0 1 0 0 0 0 0
+0 0 0 0 0 0 1 0
+0 1 0 0 0 0 0 0
+0 0 0 1 0 0 0 0
+
+Time Complexity : O(n!)
+Space Complexity: O(n^2) board + O(n) recursion stack

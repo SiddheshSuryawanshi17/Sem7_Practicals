@@ -1,0 +1,29 @@
+IMPORTANT STEPS - PRACTICAL EXAM
+================================
+
+DAY BEFORE
+1. Copy the whole Sem7_Practicals folder to the pendrive. Open a few files from it to confirm the copy works.
+2. Read 00_START_HERE.md and each subject's README.md (especially the viva sections).
+3. BT: install MetaMask, switch to the Sepolia network and get free test ETH from a faucet (it can be slow).
+   Keep your 12-word recovery phrase written down safely, NOT on the pendrive.
+
+IN THE LAB (first 5 minutes)
+4. Copy Sem7_Practicals to the Desktop (running from the pendrive is slower).
+5. Open a terminal in that folder and run:  python 00_SETUP/check_environment.py
+   (On Windows try "py" if "python" doesn't work.)
+   It shows what's missing and prints the install command.
+6. If packages are missing:  python -m pip install -r 00_SETUP/requirements.txt
+
+RUNNING PROGRAMS
+7. DAA:   g++ file.cpp -o out  then  ./out  (Windows: out.exe). No g++? Run the .py version.
+8. ML:    open the notebook FROM ITS OWN FOLDER (CSV paths are relative) -> Restart & Run All.
+          Jupyter not working? Open the .html copy in a browser (all outputs are already there).
+9. BT:    remix.ethereum.org -> paste .sol -> Compile -> Deploy (Remix VM) -> call functions.
+10. CSDF: python <program>.py inside its folder. For A3, first run: python make_test_image.py
+11. STQA: python library.py (app), then python run_tests.py (34 tests -> ACCEPTED report).
+
+IF SOMETHING FAILS
+- ML A3 without TensorFlow: no action needed, it switches to scikit-learn automatically.
+- Uber Random Forest too slow: change n_estimators=50 to 20.
+- No internet for Remix: show the .sol code + README steps and explain the gas table.
+- Each folder has sample_output.txt / screenshots to show if live run fails.

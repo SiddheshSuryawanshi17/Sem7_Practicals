@@ -1,0 +1,45 @@
+============================================================
+BASIC HEADER FIELDS
+============================================================
+From              : "PayPal Security" <service@paypal.com>
+To                : student.victim@gmail.com
+Subject           : Urgent: Your account has been limited - verify now
+Date              : Mon, 20 Oct 2025 16:15:36 +0000
+Message-ID        : <20251020161536.4F2A1C0123@mail.paypa1-security.com>
+Return-Path       : <alerts@paypa1-security.com>
+Reply-To          : verify-account@paypa1-security.com
+MIME-Version      : 1.0
+Content-Type      : text/html; charset="UTF-8"
+X-Mailer          : PHPMailer 6.1.4
+X-Originating-IP  : 185.234.72.19
+
+============================================================
+MAIL ROUTE (Received headers, oldest hop first)
+============================================================
+Hop 1: from [192.168.1.15]  ->  by mail.paypa1-security.com
+        IPs: 192.168.1.15, 10.0.0.5   Time: Mon, 20 Oct 2025 16:15:38 +0000 (UTC)
+Hop 2: from mail.paypa1-security.com  ->  by mx.google.com
+        IPs: 185.234.72.19   Time: Mon, 20 Oct 2025 09:15:41 -0700 (PDT)
+Hop 3: from ?  ->  by 2002:a05:6a10:8c0f:b0:4b2:1f3e:6a1d
+        IPs: -   Time: Mon, 20 Oct 2025 09:15:42 -0700 (PDT)
+
+Likely originating (first public) IP: 185.234.72.19
+Trace it with: whois 185.234.72.19  or  https://www.abuseipdb.com
+
+============================================================
+AUTHENTICATION RESULTS (SPF / DKIM / DMARC)
+============================================================
+SPF   : fail
+DKIM  : none
+DMARC : fail
+
+============================================================
+SPOOFING / PHISHING INDICATORS
+============================================================
+[!] Return-Path domain (alerts@paypa1-security.com) differs from From domain (paypal.com)
+[!] Reply-To (verify-account@paypa1-security.com) differs from From domain (paypal.com)
+[!] SPF check result is 'fail'
+[!] DKIM check result is 'none'
+[!] DMARC check result is 'fail'
+
+VERDICT: Email is SUSPICIOUS (possible spoofing / phishing)

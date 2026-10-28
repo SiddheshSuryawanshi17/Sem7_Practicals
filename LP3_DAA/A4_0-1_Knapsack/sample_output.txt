@@ -1,0 +1,29 @@
+### C++ (knapsack_01.cpp)  input: 4 3 2 7 2 2 4 9 5 10 
+Enter number of items: Enter value and weight of item 1: Enter value and weight of item 2: Enter value and weight of item 3: Enter value and weight of item 4: Enter knapsack capacity: 
+DP Table:
+0	0	0	0	0	0	0	0	0	0	0	
+0	0	3	3	3	3	3	3	3	3	3	
+0	0	7	7	10	10	10	10	10	10	10	
+0	0	7	7	10	10	10	10	12	12	12	
+0	0	7	7	10	10	10	16	16	19	19	
+
+Items selected: 4 2 1 
+Maximum profit = 19
+
+Time Complexity : O(n * W)
+Space Complexity: O(n * W)
+
+### Python (knapsack_01.py)
+Enter number of items: Enter value and weight of item 1: Enter value and weight of item 2: Enter value and weight of item 3: Enter value and weight of item 4: Enter knapsack capacity: 
+DP Table:
+0	0	0	0	0	0	0	0	0	0	0
+0	0	3	3	3	3	3	3	3	3	3
+0	0	7	7	10	10	10	10	10	10	10
+0	0	7	7	10	10	10	10	12	12	12
+0	0	7	7	10	10	10	16	16	19	19
+
+Items selected: [1, 2, 4]
+Maximum profit = 19
+
+Time Complexity : O(n * W)
+Space Complexity: O(n * W)

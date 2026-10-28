@@ -1,0 +1,34 @@
+### C++ (quicksort_analysis.cpp)  input: 8 / 23 34 54 123 34 56 676 112
+Enter number of elements: Enter elements: Sorted (deterministic): 23 34 34 54 56 112 123 676 
+Sorted (randomized)   : 23 34 34 54 56 112 123 676 
+
+===== Performance Analysis (N = 5000) =====
+Random input:
+  Deterministic : comparisons = 73085, time = 0.266542 ms
+  Randomized    : comparisons = 73564, time = 0.304083 ms
+Already sorted input (worst case for deterministic):
+  Deterministic : comparisons = 12497500, time = 5.541 ms
+  Randomized    : comparisons = 75701, time = 0.127375 ms
+Reverse sorted input:
+  Deterministic : comparisons = 12497500, time = 4.96892 ms
+  Randomized    : comparisons = 72835, time = 0.127125 ms
+
+Conclusion:
+  Deterministic: Best/Avg O(n log n), Worst O(n^2) on sorted/reverse input.
+  Randomized   : Expected O(n log n) for every input; worst case O(n^2) is very unlikely.
+  Space        : O(log n) average recursion stack.
+
+### Python (quicksort_analysis.py)  input: 23 34 54 123 34 56 676 112
+Enter elements separated by space: Sorted (deterministic): [23, 34, 34, 54, 56, 112, 123, 676]
+Sorted (randomized)   : [23, 34, 34, 54, 56, 112, 123, 676]
+
+===== Performance Analysis (N = 2000) =====
+Input                                           Det. comps   Det. ms  Rand. comps  Rand. ms
+Random input                                         25107      2.44        23567      2.86
+Sorted input (worst case for deterministic)        1999000    168.26        23256      2.41
+Reverse sorted input                               1999000    125.02        26352      2.64
+
+Conclusion:
+  Deterministic: Best/Avg O(n log n), Worst O(n^2) on sorted/reverse input.
+  Randomized   : Expected O(n log n) for every input; worst case is very unlikely.
+  Space        : O(log n) average recursion stack.

@@ -1,0 +1,27 @@
+### C++ (fibonacci.cpp)  input: 10 
+Enter n: 
+Fibonacci series (iterative): 0 1 1 2 3 5 8 13 21 34 
+
+F(10) using recursion     = 55
+F(10) using non-recursion = 55
+
+Steps (recursive calls)     : 177
+Steps (iterative loop runs) : 9
+
+Complexity Analysis:
+  Recursive     -> Time O(2^n), Space O(n) (recursion stack)
+  Non-recursive -> Time O(n),   Space O(1)
+
+### Python (fibonacci.py)
+Enter n: 
+Fibonacci series: 0 1 1 2 3 5 8 13 21 34
+
+F(10) using recursion     = 55
+F(10) using non-recursion = 55
+
+Steps (recursive calls)     : 177
+Steps (iterative loop runs) : 10
+
+Complexity Analysis:
+  Recursive     -> Time O(2^n), Space O(n) (recursion stack)
+  Non-recursive -> Time O(n),   Space O(1)

@@ -1,0 +1,31 @@
+### C++ (huffman.cpp)  input: abracadabra 
+Enter text to encode: 
+Char	Freq	Code
+'a'	5	0
+'b'	2	10
+'c'	1	1110
+'d'	1	1111
+'r'	2	110
+
+Encoded string : 01011001110011110101100
+Original size  : 88 bits
+Encoded size   : 23 bits
+
+Time Complexity : O(n log n), n = number of unique characters
+Space Complexity: O(n)
+
+### Python (huffman.py)
+Enter text to encode: 
+Char	Freq	Code
+'a'	5	0
+'b'	2	111
+'c'	1	101
+'d'	1	100
+'r'	2	110
+
+Encoded string : 01111100101010001111100
+Original size  : 88 bits
+Encoded size   : 23 bits
+
+Time Complexity : O(n log n), n = number of unique characters
+Space Complexity: O(n)

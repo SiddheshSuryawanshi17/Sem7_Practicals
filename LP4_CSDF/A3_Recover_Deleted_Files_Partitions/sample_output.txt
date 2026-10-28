@@ -1,0 +1,30 @@
+Hidden photo.jpg     (422 bytes) at offset 50000
+Hidden image.png     (75 bytes) at offset 200000
+Hidden evidence.pdf  (167 bytes) at offset 600000
+
+Created disk.img (1 MB). Now run: python recover_deleted.py disk.img
+
+Evidence source : disk.img
+Size            : 1048576 bytes
+SHA-256 (image) : 04b05657d877bcade8ca9524fd962c00063d65012f26cae4958d3593e77a3edb   <- record for chain of custody
+
+======================================================================
+PARTITION TABLE ANALYSIS (MBR)
+======================================================================
+#  Boot  Type  Description        Start LBA   Sectors  Status
+1  0x80  0x7   NTFS / exFAT               4       800  active
+2  0x0   0x0   Empty / Deleted         1000      1000  DELETED partition - data still present, recoverable!
+3  0x0   0xb   FAT32 (CHS)             2100         0  SUSPICIOUS (size 0 - possibly tampered)
+4  0x0   0x0   Empty / Deleted            0         0  unused slot
+
+======================================================================
+FILE CARVING (recovering deleted files by signature)
+======================================================================
+[+] JPG  offset    50000  size     422 B  -> recovered_files/recovered_1.jpg
+    SHA-256: 02f7c98a2e6ae3d1b5013413e05abf71fe3de0d48d6ffb1cdcad58b606b47884
+[+] PNG  offset   200000  size      75 B  -> recovered_files/recovered_2.png
+    SHA-256: 57cda64cead0869cd5f90dfebb024f4bd9a922aaea91d513de6fa3e949d88921
+[+] PDF  offset   600000  size     167 B  -> recovered_files/recovered_3.pdf
+    SHA-256: bacffcf7ccf4fe533cfecd958df966186198fb0fd556099f55def8b90fb4e241
+
+Total files recovered: 3  (saved in 'recovered_files/')

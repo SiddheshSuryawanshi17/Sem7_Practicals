@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*.exe
+*.out
+disk.img
+recovered_files/
+watched_folder/
+system_events.log
+incident_report.txt
+wifi_auth.log
+blocked_macs.txt
+captcha.png

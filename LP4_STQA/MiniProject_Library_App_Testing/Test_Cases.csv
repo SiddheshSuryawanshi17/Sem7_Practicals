@@ -1,0 +1,31 @@
+Test Case ID,Module,Test Scenario,Test Type,Technique,Pre-condition,Test Steps,Test Data,Expected Result,Actual Result,Status
+TC01,Fine,Fine for negative days,White-box Unit,Branch coverage,None,Call calculate_fine(-1),days=-1,LibraryError raised,LibraryError raised,Pass
+TC02,Fine,Return on time,White-box Unit,Branch coverage,None,Call calculate_fine(0),days=0,Fine = 0,0,Pass
+TC03,Fine,Late return below cap,White-box Unit,Branch coverage,None,Call calculate_fine(10),days=10,Fine = 50,50,Pass
+TC04,Fine,Late return above cap,White-box Unit,Branch coverage,None,Call calculate_fine(1000),days=1000,Fine = 500 (capped),500,Pass
+TC05,Book,Valid book creation,White-box Unit,Statement coverage,None,Create Book,"ISBN=9780131103627, copies=2",Book created; available=2,available=2,Pass
+TC06,Book,ISBN with letters,Black-box,ECP (invalid class),None,Create Book,ISBN=97801311036AB,Error: ISBN must be exactly 13 digits,Error shown,Pass
+TC07,Book,ISBN length 12,Black-box,BVA (lower-1),None,Create Book,ISBN=978013110362,Error,Error shown,Pass
+TC08,Book,ISBN length 13,Black-box,BVA (on boundary),None,Create Book,ISBN=9780131103627,Book created,Book created,Pass
+TC09,Book,ISBN length 14,Black-box,BVA (upper+1),None,Create Book,ISBN=97801311036271,Error,Error shown,Pass
+TC10,Book,Empty title,Black-box,ECP (invalid class),None,Create Book,title='   ',Error: Title cannot be empty,Error shown,Pass
+TC11,Book,Zero copies,Black-box,BVA,None,Create Book,copies=0,Error: Copies must be at least 1,Error shown,Pass
+TC12,Member,Age 4,Black-box,BVA (min-1),None,Register member,age=4,Error,Error shown,Pass
+TC13,Member,Age 5,Black-box,BVA (min),None,Register member,age=5,Member created,Member created,Pass
+TC14,Member,Age 100,Black-box,BVA (max),None,Register member,age=100,Member created,Member created,Pass
+TC15,Member,Age 101,Black-box,BVA (max+1),None,Register member,age=101,Error,Error shown,Pass
+TC16,Member,Valid member ID,Black-box,ECP (valid class),None,Register member,ID=M1234,Member created,Member created,Pass
+TC17,Member,Wrong ID prefix,Black-box,ECP (invalid class),None,Register member,ID=X1234,Error,Error shown,Pass
+TC18,Member,Duplicate member,Integration,Scenario,M0001 registered,Register M0001 again,ID=M0001,Error: Member already registered,Error shown,Pass
+TC19,Issue,Issue available book,Integration,Scenario,"Book in stock, member exists",Issue book,"M0001, 9780131103627",Due date = issue + 14 days; stock -1,As expected,Pass
+TC20,Issue,Issue when out of stock,Integration,Scenario,Only copy already issued,Issue same book to M0002,"M0002, 9780131103627",Error: No copies available,Error shown,Pass
+TC21,Issue,Borrow limit,Integration,BVA (limit+1),Member has 3 books,Issue 4th book,M0002,Error: Borrow limit reached,Error shown,Pass
+TC22,Return,Return on due date,Integration,Scenario,Book issued,Return after 14 days,days=14,Fine = 0; stock +1,As expected,Pass
+TC23,Return,Return 6 days late,Integration,Scenario,Book issued,Return after 20 days,days=20,Fine = 30,30,Pass
+TC24,Return,Return book not issued,Integration,Negative,None,Return book,"M0001, 9780262033848",Error,Error shown,Pass
+TC25,Search,Case-insensitive search,Integration,ECP,Books added,Search 'algorithms' / 'KERNIGHAN',keyword,1 result each,1 result each,Pass
+TC_UI_01,Login UI,Page title,Black-box UI (Selenium),Functional,login.html open,Open page,-,Title = Library Login,As expected,Pass
+TC_UI_02,Login UI,Valid login,Black-box UI (Selenium),ECP (valid),login.html open,Enter ID & password; click Login,M1234 / lib@123,Welcome M1234,As expected,Pass
+TC_UI_03,Login UI,Wrong password,Black-box UI (Selenium),ECP (invalid),login.html open,Enter ID & wrong password,M1234 / wrong,Invalid credentials,As expected,Pass
+TC_UI_04,Login UI,Empty fields,Black-box UI (Selenium),ECP (invalid),login.html open,Click Login with blank fields,blank,All fields are required,As expected,Pass
+TC_UI_05,Login UI,Invalid ID format,Black-box UI (Selenium),ECP (invalid),login.html open,Enter wrong-format ID,abc / lib@123,Invalid Member ID format,As expected,Pass

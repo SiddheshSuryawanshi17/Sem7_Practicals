@@ -8,6 +8,9 @@ DAY BEFORE
    Keep your 12-word recovery phrase written down safely, NOT on the pendrive.
 
 IN THE LAB (first 5 minutes)
+0. No pendrive allowed? Get everything from GitHub:
+   git clone https://github.com/SiddheshSuryawanshi17/Sem7_Practicals.git
+   (No git? Open that link in a browser -> Code -> Download ZIP -> extract.)
 4. Copy Sem7_Practicals to the Desktop (running from the pendrive is slower).
 5. Open a terminal in that folder and run:  python 00_SETUP/check_environment.py
    (On Windows try "py" if "python" doesn't work.)

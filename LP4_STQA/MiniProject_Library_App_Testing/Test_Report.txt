@@ -1,0 +1,49 @@
+TEST SUMMARY REPORT - Library Management System
+====================================================================================
+Date            : 2026-10-29 00:38
+Total test cases: 34
+Passed          : 34
+Failed          : 0
+Errors          : 0
+Pass rate       : 100.0%
+Execution time  : 0.001 s
+
+Test case                                                                   Status
+------------------------------------------------------------------------------------
+TC01_WhiteBox_CalculateFine.test_path1_negative_days_raises                 PASS
+TC01_WhiteBox_CalculateFine.test_path2_zero_days_no_fine                    PASS
+TC01_WhiteBox_CalculateFine.test_path3_fine_below_cap                       PASS
+TC01_WhiteBox_CalculateFine.test_path4_fine_capped                          PASS
+TC02_WhiteBox_BookValidation.test_empty_title                               PASS
+TC02_WhiteBox_BookValidation.test_isbn_not_digits                           PASS
+TC02_WhiteBox_BookValidation.test_valid_book                                PASS
+TC02_WhiteBox_BookValidation.test_zero_copies                               PASS
+TC03_BlackBox_ISBN_BVA.test_length_12_invalid                               PASS
+TC03_BlackBox_ISBN_BVA.test_length_13_valid                                 PASS
+TC03_BlackBox_ISBN_BVA.test_length_14_invalid                               PASS
+TC04_BlackBox_MemberAge_BVA.test_age_100                                    PASS
+TC04_BlackBox_MemberAge_BVA.test_age_101                                    PASS
+TC04_BlackBox_MemberAge_BVA.test_age_4                                      PASS
+TC04_BlackBox_MemberAge_BVA.test_age_5                                      PASS
+TC04_BlackBox_MemberAge_BVA.test_age_6                                      PASS
+TC04_BlackBox_MemberAge_BVA.test_age_99                                     PASS
+TC05_BlackBox_MemberID_ECP.test_non_digit                                   PASS
+TC05_BlackBox_MemberID_ECP.test_valid_id                                    PASS
+TC05_BlackBox_MemberID_ECP.test_wrong_length                                PASS
+TC05_BlackBox_MemberID_ECP.test_wrong_prefix                                PASS
+TC06_BlackBox_Fine_BVA.test_100_days                                        PASS
+TC06_BlackBox_Fine_BVA.test_101_days                                        PASS
+TC06_BlackBox_Fine_BVA.test_1_day                                           PASS
+TC06_BlackBox_Fine_BVA.test_99_days                                         PASS
+TC07_Integration_IssueReturn.test_add_same_isbn_increases_copies            PASS
+TC07_Integration_IssueReturn.test_borrow_limit                              PASS
+TC07_Integration_IssueReturn.test_duplicate_member                          PASS
+TC07_Integration_IssueReturn.test_issue_returns_due_date_and_reduces_stock  PASS
+TC07_Integration_IssueReturn.test_issue_when_no_copies                      PASS
+TC07_Integration_IssueReturn.test_return_late_fine                          PASS
+TC07_Integration_IssueReturn.test_return_not_issued                         PASS
+TC07_Integration_IssueReturn.test_return_on_time_no_fine                    PASS
+TC07_Integration_IssueReturn.test_search_case_insensitive                   PASS
+
+ACCEPTANCE CRITERIA: pass rate >= 95% and no errors
+DECISION: ACCEPTED - application is ready for release

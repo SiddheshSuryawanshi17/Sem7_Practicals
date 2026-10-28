@@ -1,0 +1,50 @@
+Analyzing wifi_auth.log ...
+
+Time                Event         MAC                 Action
+2025-10-20 10:00:00 AUTH_SUCCESS  11:22:33:44:55:01   allowed
+2025-10-20 10:00:05 AUTH_FAIL     11:22:33:44:55:02   allowed
+2025-10-20 10:00:09 AUTH_SUCCESS  11:22:33:44:55:02   allowed
+2025-10-20 10:00:20 AUTH_FAIL     DE:AD:BE:EF:00:01   allowed
+2025-10-20 10:00:26 AUTH_FAIL     DE:AD:BE:EF:00:01   allowed
+2025-10-20 10:00:32 AUTH_FAIL     DE:AD:BE:EF:00:01   allowed
+2025-10-20 10:00:38 AUTH_FAIL     DE:AD:BE:EF:00:01   allowed
+2025-10-20 10:00:44 AUTH_FAIL     DE:AD:BE:EF:00:01   allowed
+   [DETECT] Brute-force on PSK: 5 failures from DE:AD:BE:EF:00:01 within 0:02:00
+   [PREVENT] MAC DE:AD:BE:EF:00:01 added to blocklist (brute force)
+2025-10-20 10:00:50 AUTH_FAIL     DE:AD:BE:EF:00:01   DROPPED (MAC is blocked)
+2025-10-20 10:00:56 AUTH_FAIL     DE:AD:BE:EF:00:01   DROPPED (MAC is blocked)
+2025-10-20 10:01:02 AUTH_FAIL     DE:AD:BE:EF:00:01   DROPPED (MAC is blocked)
+2025-10-20 10:01:40 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:41 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:42 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:43 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:44 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:45 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:46 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:47 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:48 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:49 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:50 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:51 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:52 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:53 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:54 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:55 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:56 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:57 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:58 DEAUTH        66:66:66:66:66:66   allowed
+2025-10-20 10:01:59 DEAUTH        66:66:66:66:66:66   allowed
+   [DETECT] Deauthentication flood (DoS) from 66:66:66:66:66:66: 20+ frames
+   [PREVENT] MAC 66:66:66:66:66:66 added to blocklist (deauth flood)
+2025-10-20 10:02:00 DEAUTH        66:66:66:66:66:66   DROPPED (MAC is blocked)
+2025-10-20 10:02:01 DEAUTH        66:66:66:66:66:66   DROPPED (MAC is blocked)
+2025-10-20 10:02:02 DEAUTH        66:66:66:66:66:66   DROPPED (MAC is blocked)
+2025-10-20 10:02:03 DEAUTH        66:66:66:66:66:66   DROPPED (MAC is blocked)
+2025-10-20 10:02:04 DEAUTH        66:66:66:66:66:66   DROPPED (MAC is blocked)
+2025-10-20 10:02:10 BEACON        99:88:77:66:55:44   allowed
+   [DETECT] Rogue AP / Evil twin: SSID 'CollegeWiFi' broadcast by unknown BSSID 99:88:77:66:55:44
+   [PREVENT] MAC 99:88:77:66:55:44 added to blocklist (rogue access point)
+2025-10-20 10:02:20 BEACON        AA:BB:CC:00:11:22   allowed
+2025-10-20 10:03:20 AUTH_FAIL     DE:AD:BE:EF:00:01   DROPPED (MAC is blocked)
+
+Blocked devices saved in blocked_macs.txt: ['66:66:66:66:66:66', '99:88:77:66:55:44', 'DE:AD:BE:EF:00:01']

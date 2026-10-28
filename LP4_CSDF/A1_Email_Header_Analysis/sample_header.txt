@@ -1,0 +1,26 @@
+Delivered-To: student.victim@gmail.com
+Received: by 2002:a05:6a10:8c0f:b0:4b2:1f3e:6a1d with SMTP id m15csp1234567pxj;
+        Mon, 20 Oct 2025 09:15:42 -0700 (PDT)
+Received: from mail.paypa1-security.com (mail.paypa1-security.com. [185.234.72.19])
+        by mx.google.com with ESMTPS id z12si1234567wrt.401.2025.10.20.09.15.41
+        for <student.victim@gmail.com>;
+        Mon, 20 Oct 2025 09:15:41 -0700 (PDT)
+Received: from [192.168.1.15] (unknown [10.0.0.5])
+        by mail.paypa1-security.com (Postfix) with ESMTPSA id 4F2A1C0123
+        for <student.victim@gmail.com>; Mon, 20 Oct 2025 16:15:38 +0000 (UTC)
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of alerts@paypa1-security.com does not designate 185.234.72.19 as permitted sender) smtp.mailfrom=alerts@paypa1-security.com;
+       dkim=none;
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=paypal.com
+Received-SPF: fail (google.com: domain of alerts@paypa1-security.com does not designate 185.234.72.19 as permitted sender) client-ip=185.234.72.19;
+Return-Path: <alerts@paypa1-security.com>
+From: "PayPal Security" <service@paypal.com>
+Reply-To: verify-account@paypa1-security.com
+To: student.victim@gmail.com
+Subject: Urgent: Your account has been limited - verify now
+Date: Mon, 20 Oct 2025 16:15:36 +0000
+Message-ID: <20251020161536.4F2A1C0123@mail.paypa1-security.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+X-Mailer: PHPMailer 6.1.4
+X-Originating-IP: 185.234.72.19

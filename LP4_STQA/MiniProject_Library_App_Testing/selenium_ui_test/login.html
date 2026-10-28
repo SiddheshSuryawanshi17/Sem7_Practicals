@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Library Login</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #eef2f7; display: flex; justify-content: center; padding-top: 80px; }
+  form { background: #fff; padding: 24px 32px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); width: 300px; }
+  input { width: 100%; padding: 8px; margin: 6px 0 12px; box-sizing: border-box; }
+  button { width: 100%; padding: 10px; background: #2b4c9b; color: #fff; border: none; border-radius: 4px; }
+  #msg { margin-top: 12px; font-weight: bold; }
+  .ok { color: green; } .err { color: #c0392b; }
+</style>
+</head>
+<body>
+<form id="loginForm" onsubmit="return login()">
+  <h2>Library Login</h2>
+  <label>Member ID</label>
+  <input id="username" placeholder="M1234">
+  <label>Password</label>
+  <input id="password" type="password">
+  <button id="loginBtn" type="submit">Login</button>
+  <div id="msg"></div>
+</form>
+<script>
+// Valid credentials for the demo: M1234 / lib@123
+function login() {
+  const u = document.getElementById('username').value.trim();
+  const p = document.getElementById('password').value;
+  const msg = document.getElementById('msg');
+  if (!u || !p) { msg.className = 'err'; msg.innerText = 'All fields are required'; }
+  else if (!/^M\d{4}$/.test(u)) { msg.className = 'err'; msg.innerText = 'Invalid Member ID format'; }
+  else if (u === 'M1234' && p === 'lib@123') { msg.className = 'ok'; msg.innerText = 'Welcome M1234'; document.title = 'Library Dashboard'; }
+  else { msg.className = 'err'; msg.innerText = 'Invalid credentials'; }
+  return false;
+}
+</script>
+</body>
+</html>

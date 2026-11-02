@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 contract Bank {
-    // each customer's address maps to their balance (in wei)
     mapping(address => uint256) private balances;
 
     event Deposited(address indexed customer, uint256 amount);
@@ -20,7 +19,7 @@ contract Bank {
         require(amount > 0, "Amount must be greater than 0");
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
-        balances[msg.sender] -= amount;          // update balance first
+        balances[msg.sender] -= amount;
         (bool sent, ) = payable(msg.sender).call{value: amount}("");
         require(sent, "Transfer failed");
 

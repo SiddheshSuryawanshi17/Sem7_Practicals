@@ -4,12 +4,12 @@ Every assignment has a **C++** and a **Python** version (use whichever the exami
 
 | # | Problem statement | Folder | Sample input |
 |---|---|---|---|
-| 1 | Non-recursive and recursive program to calculate Fibonacci numbers and analyze their time and space complexity | `A1_Fibonacci` | `10` |
-| 2 | Huffman Encoding using a greedy strategy | `A2_Huffman_Encoding` | `abracadabra` |
-| 3 | Fractional Knapsack using a greedy method | `A3_Fractional_Knapsack` | 3 items: `60 10`, `100 20`, `120 30`, cap `50` → **240** |
-| 4 | 0-1 Knapsack using dynamic programming (or branch & bound) | `A4_0-1_Knapsack` | 4 items: `3 2`, `7 2`, `2 4`, `9 5`, cap `10` → **19** |
-| 5 | n-Queens matrix with first Queen placed; backtracking places the rest | `A5_N_Queens` | n=`8`, first col=`0` |
-| 6 | Mini project: analysis of Quick Sort, deterministic vs randomized | `A6_MiniProject_QuickSort_Analysis` | `8` then `23 34 54 123 34 56 676 112` |
+| 1 | Non-recursive and recursive program to calculate Fibonacci numbers and analyze their time and space complexity | `Fibonacci` | `10` |
+| 2 | Huffman Encoding using a greedy strategy | `Huffman_Encoding` | `abracadabra` |
+| 3 | Fractional Knapsack using a greedy method | `Fractional_Knapsack` | 3 items: `60 10`, `100 20`, `120 30`, cap `50` → **240** |
+| 4 | 0-1 Knapsack using dynamic programming (or branch & bound) | `0-1_Knapsack` | 4 items: `3 2`, `7 2`, `2 4`, `9 5`, cap `10` → **19** |
+| 5 | n-Queens matrix with first Queen placed; backtracking places the rest | `N_Queens` | n=`8`, first col=`0` |
+| 6 | Mini project: analysis of Quick Sort, deterministic vs randomized | `MiniProject_QuickSort_Analysis` | `8` then `23 34 54 123 34 56 676 112` |
 
 ## How to run
 ```bash

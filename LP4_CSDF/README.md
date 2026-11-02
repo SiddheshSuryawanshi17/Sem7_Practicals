@@ -4,12 +4,12 @@ All programs are **Python 3 using only the standard library** (A2's image CAPTCH
 
 | # | Problem statement | Folder | Run |
 |---|---|---|---|
-| 1 | Tracking emails and investigating email crimes: analyze an e-mail header | `A1_Email_Header_Analysis` | `python email_header_analyzer.py` (or pass your own header .txt) |
-| 2 | Generate and verify a CAPTCHA image | `A2_CAPTCHA` | `python captcha_app.py` |
-| 3 | Forensic program for recovering deleted files and deleted partitions | `A3_Recover_Deleted_Files_Partitions` | `python make_test_image.py` then `python recover_deleted.py disk.img` |
-| 4 | Log capturing and event correlation | `A4_Log_Capturing_Event_Correlation` | `python log_capture_correlation.py` |
-| 5 | Wi-Fi intrusion detection and prevention (brute force, deauth flood, rogue AP) | `A5_WiFi_Intrusion_Detection_Prevention` | `python wifi_ids.py` |
-| 6 | Configure and demonstrate a vulnerability assessment tool like Wireshark or SNORT | `A6_Wireshark_SNORT` | see its README; saved `.pcapng`, screenshots, `local.rules` |
+| 1 | Tracking emails and investigating email crimes: analyze an e-mail header | `Email_Header_Analysis` | `python email_header_analyzer.py` (or pass your own header .txt) |
+| 2 | Generate and verify a CAPTCHA image | `CAPTCHA` | `python captcha_app.py` |
+| 3 | Forensic program for recovering deleted files and deleted partitions | `Recover_Deleted_Files_Partitions` | `python make_test_image.py` then `python recover_deleted.py disk.img` |
+| 4 | Log capturing and event correlation | `Log_Capturing_Event_Correlation` | `python log_capture_correlation.py` |
+| 5 | Wi-Fi intrusion detection and prevention (brute force, deauth flood, rogue AP) | `WiFi_Intrusion_Detection_Prevention` | `python wifi_ids.py` |
+| 6 | Configure and demonstrate a vulnerability assessment tool like Wireshark or SNORT | `Wireshark_SNORT` | see its README; saved `.pcapng`, screenshots, `local.rules` |
 
 > Assignment numbering differs slightly between colleges. Match by **title** with your journal.
 

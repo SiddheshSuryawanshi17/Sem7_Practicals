@@ -2,13 +2,13 @@
 
 | # | Problem statement | Folder | What's inside |
 |---|---|---|---|
-| 1 | Installation of MetaMask and study spending Ether per transaction | `A1_MetaMask_Install_Ether_per_Txn` | step-by-step + gas/fee observation table |
-| 2 | Create your own wallet using MetaMask for crypto transactions | `A2_Create_Wallet` | steps + wallet theory |
-| 3 | Smart contract on a test network for a Bank account: deposit, withdraw, show balance | `A3_Bank_Account_Contract` | `Bank.sol` + Remix steps |
-| 4 | Solidity Student data using structures, arrays, fallback; deploy and observe gas and transaction fee | `A4_Student_Data_Contract` | `StudentData.sol` + gas table |
-| 5 | Survey report on types of blockchains and real-time use cases | `A5_Survey_Report_Blockchain_Types` | full report (print it) |
-| 6 | Create a Business Network using Hyperledger | `A6_Hyperledger_Business_Network` | `model.cto`, `logic.js`, `permissions.acl` + steps |
-| 7 | Mini project: blockchain-based dApp for e-voting | `A7_MiniProject_eVoting_dApp` | `Voting.sol` + `index.html` front end |
+| 1 | Installation of MetaMask and study spending Ether per transaction | `MetaMask_Install_Ether_per_Txn` | step-by-step + gas/fee observation table |
+| 2 | Create your own wallet using MetaMask for crypto transactions | `Create_Wallet` | steps + wallet theory |
+| 3 | Smart contract on a test network for a Bank account: deposit, withdraw, show balance | `Bank_Account_Contract` | `Bank.sol` + Remix steps |
+| 4 | Solidity Student data using structures, arrays, fallback; deploy and observe gas and transaction fee | `Student_Data_Contract` | `StudentData.sol` + gas table |
+| 5 | Survey report on types of blockchains and real-time use cases | `Survey_Report_Blockchain_Types` | full report (print it) |
+| 6 | Create a Business Network using Hyperledger | `Hyperledger_Business_Network` | `model.cto`, `logic.js`, `permissions.acl` + steps |
+| 7 | Mini project: blockchain-based dApp for e-voting | `MiniProject_eVoting_dApp` | `Voting.sol` + `index.html` front end |
 
 All `.sol` files compile with Solidity 0.8.x (verified with solc 0.8.26).
 

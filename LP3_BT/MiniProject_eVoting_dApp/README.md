@@ -21,7 +21,7 @@
 2. Remix → Environment **Injected Provider – MetaMask** → Deploy → copy contract address.
 3. Open `index.html` through a local server (MetaMask does not inject into `file://` pages):
    ```
-   cd A7_MiniProject_eVoting_dApp
+   cd MiniProject_eVoting_dApp
    python -m http.server 8000
    ```
    Then browse to http://localhost:8000

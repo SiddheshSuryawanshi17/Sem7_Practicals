@@ -4,6 +4,8 @@
 
 File: `Bank.sol`
 
+Also included: `Bank_Report_Version.sol`, the simpler contract from `Practical_3_Report.md` (no `createAccount` step; functions are `deposit`, `withdraw`, `getBalance`, plus `receive()`). Use whichever version you want to demo; paste it into Remix as `Bank.sol`.
+
 ## How to run in Remix (5 minutes)
 1. Open **https://remix.ethereum.org** → *File explorer* → create `Bank.sol` → paste the code.
 2. **Solidity Compiler** tab → compiler `0.8.x` → *Compile Bank.sol* (green tick).

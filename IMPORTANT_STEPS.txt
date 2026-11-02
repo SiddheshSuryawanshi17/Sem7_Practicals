@@ -21,6 +21,8 @@ RUNNING PROGRAMS
 7. DAA:   g++ file.cpp -o out  then  ./out  (Windows: out.exe). No g++? Run the .py version.
 8. ML:    open the notebook FROM ITS OWN FOLDER (CSV paths are relative) -> Restart & Run All.
           Jupyter not working? Open the .html copy in a browser (all outputs are already there).
+          Jupyter page blank / 500 errors? Copy 00_SETUP/run_notebook.py into the practical folder and run:
+          python3 run_notebook.py <notebook>.ipynb
 9. BT:    remix.ethereum.org -> paste .sol -> Compile -> Deploy (Remix VM) -> call functions.
 10. CSDF: python <program>.py inside its folder. For A3, first run: python make_test_image.py
 11. STQA: python library.py (app), then python run_tests.py (34 tests -> ACCEPTED report).
